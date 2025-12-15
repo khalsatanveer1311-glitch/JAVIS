@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaGPT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="sidebar">
+    <button id="newChatBtn">+ New Chat</button>
+    <button id="settingsBtn">⚙️ Settings</button>
+    <button id="aboutBtn">ℹ️ About</button>
+  </div>
+
+  <div id="chat-container">
+    <div id="chat-box"></div>
+    <div id="input-area">
+      <input type="text" id="userInput" placeholder="Ask NovaGPT..." />
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+
+  <!-- Settings Panel -->
+  <div id="settings-panel" class="hidden">
+    <div class="settings-header">
+      <h2>Settings</h2>
+      <span id="closeSettings">✖</span>
+    </div>
+    <div class="settings-option">
+      <label>🎤 Voice:</label>
+      <input type="checkbox" id="voiceToggle" checked />
+    </div>
+    <div class="settings-option">
+      <label>🌙 Dark Mode:</label>
+      <input type="checkbox" id="themeToggle" checked />
+    </div>
+    <div class="settings-option">
+      <button id="clearChat">🧹 Clear Chat</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
